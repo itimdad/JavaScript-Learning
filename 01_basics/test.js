@@ -1,2 +1,1 @@
-console.log("Imdad")
-console.log("Firdausi")
+console.log("Hello");
