@@ -14,3 +14,13 @@ function square() {
 }
 
 square();
+
+var x = 3;
+
+function area() {
+    console.log(x);
+}
+area();
+
+
+
