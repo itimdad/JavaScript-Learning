@@ -25,3 +25,15 @@ console.log(nums);
 let arr = [2,4,5,1,2,5,6];
 const newArr = arr.slice(2, 4);
 console.log(newArr);
+
+
+//concat method 
+let fruits = ["banana", "apple",];
+arr1.concat("kela");
+console.log(arr1);
+
+//join
+let nArr = fruits.join(" - ");
+console.log(nArr);
+
+
