@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+        <label for="name">FisrtName:</label>
+        <input type="text" name="username" placeholder="F name"  <br> <br>
+
+        <Label>Last name</Label>
+        <input type="text" name="username" placeholder="L name"> <br><br>
+
+        <button onclick="showValue()">Submit</button>
+
+        <p id="demo"></p>
+
+
+
+    <script>
+        function showValue() {
+            const user = document.getElementsByName("username");
+            let name = " ";
+            for(let i = 0; i < user.length; i++) {
+                name += user[i].value + " ";
+            }
+
+            document.getElementById("demo").innerHTML = name.trim();
+        }
+
+
+
+    </script>
+</body>
+</html>
