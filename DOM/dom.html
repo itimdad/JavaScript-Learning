@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading">Heading tag</h1>
+    <h2 id="h">heading 2</h2>
+    <p class="p">Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p class="p">Pararaph 3</p>
+    <p>Paragrph 4</p>
+
+    <button onclick="change()">Change color</button>
+
+    <script>
+
+        const paras = document.getElementsByClassName("p");
+
+        for(let i = 0; i < paras.length; i++) {
+            paras[i].style.backgroundColor="yellow";
+            paras[i].style.fontWeight="bold";
+            paras[i].textContent="odd para";
+        }
+
+        function change() {
+            document.getElementsByTagName("p")[0].style.color="red";
+        document.getElementsByTagName("p")[1].style.color="blue";
+        const para = document.getElementsByTagName("p");
+        
+        for(let i = 0; i < para.length; i++) {
+            para[i].style.backgroundColor="cyan";
+            para[i].style.fontSize="30px"
+        }
+
+        //by id
+        document.getElementById("heading").textContent="Dom in js"
+        document.getElementById("h").innerHTML="<i>Hello</i>";
+
+        }
+        
+    </script>
+</body>
+</html>
